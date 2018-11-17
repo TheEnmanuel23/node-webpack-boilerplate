@@ -11,6 +11,16 @@ module.exports = root => ({
   module: {
     rules: [
       {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+          },
+        }],
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         include: [path.join(root, 'src')],
