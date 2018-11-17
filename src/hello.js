@@ -3,4 +3,4 @@ function hello () {
   body.innerHTML = 'hello world from client'
 }
 
-export default hello;
+export default hello

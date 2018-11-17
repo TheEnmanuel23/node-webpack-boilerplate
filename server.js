@@ -6,17 +6,17 @@ const app = express()
 if (process.env.NODE_ENV === 'development') {
   const webpack = require('webpack')
   const webpackMiddleware = require('webpack-dev-middleware')
-  const hotModuleReplacement = require('webpack-hot-middleware')
   const webpackConfig = require('./webpack.config')('development')
 
   // webpack hmr
   const compiler = webpack(webpackConfig)
   app.use(webpackMiddleware(compiler, {
     noInfo: true,
-    publicPath: webpackConfig.output.publicPath
+    publicPath: webpackConfig.output.publicPath,
+    stats: false
   }))
 
-  app.use(require("webpack-hot-middleware")(compiler));
+  app.use(require('webpack-hot-middleware')(compiler))
 }
 
 app.set('view engine', 'ejs')
