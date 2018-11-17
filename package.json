@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Main website",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "dev": "node server.js",
+    "dev:debug": "nodemon --inspect server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/radixhaven/website.git"
+  },
+  "author": "enmisac@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/radixhaven/website/issues"
+  },
+  "homepage": "https://gitlab.com/radixhaven/website#README",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
