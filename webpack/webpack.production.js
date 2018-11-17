@@ -2,6 +2,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // eslint-disab
 const path = require('path');
 
 module.exports = root => ({
+  entry: path.join(root, 'src/index.js'),
+  output: {
+    filename: 'bundle.js',
+    path: path.join(root, 'public'),
+    publicPath: '/',
+  },
   mode: 'production',
   devtool: 'source-map',
   module: {

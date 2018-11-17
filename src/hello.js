@@ -1,5 +1,6 @@
 function hello () {
-  alert(123)
+  const body = document.querySelector('body')
+  body.innerHTML = 'hello world from client'
 }
 
 export default hello;
