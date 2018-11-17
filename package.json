@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/radixhaven/website.git"
+    "url": "git@github.com:TheEnmanuel23/node-webpack-boilerplate.git"
   },
   "author": "enmisac@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/radixhaven/website/issues"
+    "url": "https://github.com/TheEnmanuel23/node-webpack-boilerplate/issues"
   },
-  "homepage": "https://gitlab.com/radixhaven/website#README",
+  "homepage": "https://github.com/TheEnmanuel23/node-webpack-boilerplate#README",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "ejs": "^2.6.1",
